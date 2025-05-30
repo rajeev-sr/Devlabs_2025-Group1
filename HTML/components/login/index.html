@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login Component</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="login-container">
+    <form>
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+
+      <div class="radio-group">
+        <label><input type="radio" name="role" value="admin"> Admin</label>
+        <label><input type="radio" name="role" value="user"> User</label>
+      </div>
+
+      <select>
+        <option>Student</option>
+        <option>Teacher</option>
+        <option>Parent</option>
+      </select>
+
+      <div class="checkbox-group">
+        <input type="checkbox" id="agree">
+        <label for="agree">I Agree to the <a href="#">terms and conditions</a></label>
+      </div>
+
+      <button type="submit">Sign In</button>
+
+      <p class="hint">
+        (username is <strong>DevLabs</strong> and Password is <em>Learning</em>)
+      </p>
+    </form>
+  </div>
+</body>
+</html>
