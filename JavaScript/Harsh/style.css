@@ -119,3 +119,15 @@ body {
 #themeToggle:hover {
     background: #f1f1f1;
 }
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Adds space between buttons */
+    margin-top: 15px;
+}
+
+#clickButton, #decreaseButton {
+    width: 150px;
+    text-align: center;
+}
