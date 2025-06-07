@@ -51,3 +51,10 @@ window.onload = function() {
 setTimeout(() => {
     document.querySelector("h1").textContent = "Your Personal Click Counter!";
 }, 3000);
+
+document.getElementById("decreaseButton").addEventListener("click", function() {
+    if (clickCount > 0) {  // Ensure count doesn’t go negative
+        clickCount--;
+        document.getElementById("clickCount").textContent = clickCount;
+    }
+});
