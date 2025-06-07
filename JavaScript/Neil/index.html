@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>Click counter and Timer</title>
+    </head>
+    <body>
+        <div class="container" style="text-align: center; font-family: Arial, Helvetica, sans-serif">
+            <h1>Click Counter</h1>
+            <p style="font-size: 25;">Clicks : <span id="clickCount">0</span></p>
+            <button class="round-button" id = "countAdd" style="height: 45px; width: 45px; font-size: large; background-color: green; color: white;">+</button>
+            <button class="round-button" id = "countSub" style="height: 45px; width: 45px; font-size: large; background-color: grey; color: white;">-</button>
+            <button class="round-button" id = "countReset" style="height: 45px; width: 100px; font-size: large; background-color: darkorange; color: white;">RESET</button>
+            <h1>Timer</h1>
+            
+            <p style="font-size: 25;">Time : <span id="time">0</span></p>
+            
+            <button class="round-button green" id = "timeStart" style="height: 30px; color: white;" onclick=timeStartFn(this)>Start Timer</button>
+            <button class="round-button grey disabled" id = "timeStop" style="height: 30px; color: white;">Stop Timer</button>
+            <button class="round-button" id = "timeReset" style="height: 30px; background-color: darkorange; color: white;">RESET</button>
+            <style>
+                .round-button {
+                    border-radius: 8px;
+                }
+
+                .green {
+                    background-color: green;
+                }
+                .grey {
+                    background-color: grey;
+                }
+                .red {
+                    background-color: red;
+                }
+                .disabled {
+                    opacity: 0.5;
+                    pointer-events: none;
+                }
+            </style>
+
+        </div>
+        <script src = script.js></script>
+    </body>
+</html>
