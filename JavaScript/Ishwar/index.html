@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Click Counter & Timer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>Click Counter</h2>
+  <div class="counter">
+    <button onclick="decrease()">-</button>
+    <span id="count">0</span>
+    <button onclick="increase()">+</button>
+    <button onclick="resetCounter()">Reset</button>
+  </div>
+
+  <h2>Timer</h2>
+  <div class="timer">
+    <span id="time">0</span> seconds
+    <div>
+      <button onclick="startTimer()">Start</button>
+      <button onclick="stopTimer()">Stop</button>
+      <button onclick="resetTimer()">Reset</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
