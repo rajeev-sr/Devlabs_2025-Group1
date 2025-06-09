@@ -1,0 +1,96 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.counter-container {
+    background: #fff8e1;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 320px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0 0 10px;
+    color: #333;
+}
+
+p {
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.display {
+    position: relative;
+    font-size: 3rem;
+    background: #ffffff;
+    padding: 1rem;
+    border-radius: 10px;
+    margin-bottom: 1.2rem;
+    border: 1px solid #ccc;
+}
+
+.display #count {
+    font-weight: bold;
+}
+
+.reset {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background: transparent;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: #999;
+}
+
+.buttons .btn {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.5rem;
+    border: none;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.increment {
+    background-color: #2e7d32;
+    color: white;
+}
+
+.increment:hover {
+    background-color: #1b5e20;
+}
+
+.decrement {
+    background-color: #546e7a;
+    color: white;
+}
+
+.decrement:hover {
+    background-color: #37474f;
+}
+
+.extra-buttons .btn {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    margin-top: 6px;
+    border-radius: 6px;
+    background-color: #b0bec5;
+    color: #263238;
+}
+
+.extra-buttons .btn:hover {
+    background-color: #90a4ae;
+}
